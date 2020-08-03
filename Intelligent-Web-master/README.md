@@ -3,7 +3,9 @@
 
 A university team project for building a simple social network website that allows to register, upload stories, images and rate other users' stories. The application caches client's data for offline functionality using a cache then network Service Worker strategy and IndexedDB.
 
-Contributors: Luke Peacock, [Luke Peacock](https://github.com/LukePeacock)
+I was responsible for creating mongoDB database, user registration, login and authentication system.
+
+Contributors: [RokasBagdonas](https://github.com/RokasBagdonas), [Luke Peacock](https://github.com/LukePeacock)
 
 ## Running The System
 To install the necesasry npm modules, please navigate to the project directory in the terminal/console and use `npm install`. This will install all npm modules needed.
