@@ -3,7 +3,7 @@
 
 A university team project for building a simple social network website that allows to register, upload stories, images and rate other users' stories. The application caches client's data for offline functionality using a cache then network Service Worker strategy and IndexedDB.
 
-Contributors: Luke Peacock, wiktork6
+Contributors: Luke Peacock, RokasBagdonas
 
 ## Running The System
 To install the necesasry npm modules, please navigate to the project directory in the terminal/console and use `npm install`. This will install all npm modules needed.
