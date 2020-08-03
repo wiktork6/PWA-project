@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head lang="eng">
+        <head lang="eng">
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!--<link rel="stylesheet" href="/styles/bootstrap.min.css">-->
+            <link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+            <!-- TODO add manifest here -->
+            <link rel="manifest" href="/manifest.json">
+            <!-- Add to home screen for Safari on iOS -->
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="apple-mobile-web-app-title" content="Assignment">
+            <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+            <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+            <meta name="msapplication-TileColor" content="#2F3BA2">
+
+            <title><%= title %></title>
+
+            <link rel="icon" href="/images/icon.png">
+
+            <script src="/scripts/jquery.min.js"></script>
+
+            <!--- indexeddb js --->
+            <script src="/scripts/idb.js"></script>
+
+
+        </head>
+    </head>
+    <body >
+
+        <header class="header">
+            <h1 class="header__title"><%=title%></h1>
+            <a class="headerButton" href="/" id="butCancel" aria-label="Cancel"></a>
+        </header>
+
+        <main class="main">
+            <div class="offline_div" id="offline_div" style="display: none">You are offline</div>
+            <div>
+                <p class ='register-notice'>Not registered? Click <a href="/register">here</a> to sign-up!</p>
+            </div>
+            <div class="card story-card">
+            <h2>Please login</h2>
+            <form id='loginForm' onsubmit="return false;">
+                <label>Email:</label><br>
+                <input type="text" name="email"><br>
+                <label>Password:</label><br>
+                <input type="Password" name="password"><br>
+                <button id="loginButton" onclick="sendLoginData()" >login</button>
+            </form>
+            </div>
+        </main>
+
+
+    </body>
+    <script src="/scripts/userManager.js"></script>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "passport": "~0.4.1",
+    "multer": "~1.4.2",
+    "fs-extra": "~5.0.0",
+    "idb": "^5.0.1",
+    "serve-favicon": "~2.4.5",
+    "serve-static": "^1.13.2",
+    "mongoose": "^5.9.10",
+    "mongodb": "^3.5.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15"
+  }
+}

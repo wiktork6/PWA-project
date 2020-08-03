@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "userId": "user_0",
+      "ratings": [
+        { "storyId": "story_0",
+          "rating": 1
+        }
+      ]
+    }
+  ],
+"stories": [
+    {
+      "userId": "user_0",
+      "storyId": "story_0",
+      "text": "kZbntRd DnINrFX nIBsirr VfvoDlO LgfjVdE kHEGhZL bUGCaoV pRikGcg FNNSQjf zpeyOrV."
+    }
+  ]}

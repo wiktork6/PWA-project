@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="/styles/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Assignment">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+
+    <title><%= title %></title>
+
+    <link rel="icon" href="/images/icon.png">
+
+
+
+
+    <script src="/scripts/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="/scripts/bootstrap.min.js"></script>
+
+    <!--- indexeddb js --->
+    <script src="/scripts/idb.js"></script>
+
+
+</head>
+<body onload="initApp()">
+<header class="header">
+    <h1 class="header__title"><%=title%></h1>
+
+    <button class="headerButton" id="butRefresh" aria-label="Refresh"  onclick="displayNewStories()"></button>
+    <a class="headerButton"  id="butAdd" aria-label="Add"></a>
+    <a class="headerButton"  id="butUser" aria-label="User"></a>
+</header>
+<main class="main">
+    <div class="sort_div">Sort By: <button id="butSort" aria-label="Sort">New</button></div>
+
+    <div class="offline_div" id="offline_div" style="display: none">You are offline</div>
+
+<div id="results"> </div>
+
+</main>
+<div class="dialog-container new-post-dialog">
+    <div class="dialog">
+        <div class="dialog-title header">
+            <h1 class="header__title">Post a New Story</h1>
+            <a class="headerButton" id="butCancel" aria-label="Cancel"></a>
+        </div>
+            <form id=“xForm" class="main" onsubmit="onSubmit()">
+                <div class="dialog-body">
+                    <label for='content' class="author">Content:</label>
+                    <input type="text" name="content" id="content"/>
+                    <label for='imageOne' class="author">Image One:</label>
+                    <input type="file" name="images" id="images" multiple capture="camera"/>
+                    <img src='' class='img-preview' id='img1'/>
+                    <img src='' class='img-preview' id='img2'/>
+                    <img src='' class='img-preview' id='img3'/>
+                </div>
+                <div class="dialog-buttons">
+                    <p><input type="submit" name="submit" value="Submit" id="submit"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/scripts/userManager.js"></script>
+<script src="/scripts/classes.js"></script>
+<script src="/scripts/app.js"></script>
+<script src="/scripts/stories.js"></script>
+<script src="/scripts/database.js"></script>
+
+</body>
+</html>
